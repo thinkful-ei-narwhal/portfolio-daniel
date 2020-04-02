@@ -199,7 +199,7 @@ select {
   padding: 0;
 }
 
-.biography-button, .portfolio-button, .extras-button, .contact-button {
+.menu-button{
   display: none;
   font-family: 'Alegreya', serif;
   background-color: white;
@@ -210,7 +210,7 @@ select {
   margin: 5px;
 }
 
-.biography-button:hover, .portfolio-button:hover, .extras-button:hover, .contact-button:hover {
+.menu-button:hover {
   color: rgb(240, 240, 240);
   background-color: #000092;
   transition: 0.25s;
@@ -230,6 +230,12 @@ select {
   border: 1px solid white;
   border-radius: 5px;
   margin: 5px;
+}
+
+iframe {
+  height: 400px;
+  width: 75%;
+  margin: auto;
 }
 
 @media (min-width: 440px) { /* Medium Screen */
@@ -272,7 +278,7 @@ select {
     display: flex;
   }
   
-  .biography-button, .portfolio-button, .extras-button, .contact-button {
+  .menu-button{
     display: inline;
   }
 }
@@ -282,7 +288,7 @@ select {
     display: none;
   }
   
-  .biography-button, .portfolio-button, .extras-button, .contact-button {
+  .menu-button {
     font-size: 18px;
     width: 120px;
     margin: 10px;
@@ -295,11 +301,11 @@ select {
 }
 
 .fade-in {
-  animation: fadeIn ease .5s;
-  -webkit-animation: fadeIn ease .5s;
-  -moz-animation: fadeIn ease .5s;
-  -o-animation: fadeIn ease .5s;
-  -ms-animation: fadeIn ease 5.s;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
 }
 
 @keyframes fadeIn {
