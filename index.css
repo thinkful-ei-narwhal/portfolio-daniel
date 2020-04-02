@@ -150,13 +150,13 @@ p::after {
   margin-left: 15%;
 }
 
-.button-piano {
+.button-piano, .piano-button {
   margin: 0px;
   padding: 0px;
   width: 60px;
 }
 
-.button-piano:hover {
+.button-piano:hover, .piano-button:hover {
   color: rgb(240, 240, 240);
   background-color: #000092;
   border: 1px solid white;
@@ -352,3 +352,4 @@ iframe {
       opacity: 1;
   }
 }
+

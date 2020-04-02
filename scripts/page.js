@@ -34,13 +34,13 @@ const generateMenuHTML = function(bool) {
         <a href="#anchor2" class="button-piano white">Biography <i class="fas fa-book"></i></a>
       </li>
       <li>
-      <a class="button-piano black" href="https://github.com/DanielJSottile" target="_blank">Github <i class="fab fa-github-square"></i></a>
+      <a class="piano-button black" href="https://github.com/DanielJSottile" target="_blank">Github <i class="fab fa-github-square"></i></a>
       </li>
       <li>
         <a href="#anchor3" class="button-piano white">Portfolio <i class="fas fa-pager"></i></a>
       </li>
       <li>
-      <a class="button-piano black" href="https://www.linkedin.com/in/daniel-sottile/" target="_blank">LinkedIn <i class="fab fa-linkedin"></i></a>
+      <a class="piano-button black" href="https://www.linkedin.com/in/daniel-sottile/" target="_blank">LinkedIn <i class="fab fa-linkedin"></i></a>
       </li>
       <li>
         <a href="#anchor4" class="button-piano white">Extra <i class="fas fa-music"></i></a>
@@ -147,7 +147,6 @@ const projectSubmitListener = function() {
     let projectVal = $('option:selected').val();
     projectVal = Number(projectVal);
     store.currPro = projectVal;
-    console.log(store.currPro);
     render();
   });
 };
@@ -156,7 +155,6 @@ const menuButtonClickListener = function() {
   $('nav').on('click', '.menu', function(event) {
     event.preventDefault();
     store.menuPushed = !store.menuPushed;
-    console.log(store.menuPushed);
     render();
   });
 };
@@ -192,6 +190,14 @@ const topMenuButtonListener = function() {
   });
 };
 
+// const soundcloudListener = function() {
+//   $('main').on('click', 'iframe', function(event) {
+//     event.preventDefault();
+//     store.soundPlay = false;
+//     render();
+//   });
+// };
+
 // binder and export 
 
 const bindEventListeners = function () {
@@ -201,6 +207,7 @@ const bindEventListeners = function () {
   soundToggleClickTwoListener();
   pianoButtonListener();
   topMenuButtonListener();
+  // soundcloudListener();
 };
 
 // This object contains the only exposed methods from this module:
