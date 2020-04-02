@@ -110,7 +110,8 @@ const projectHTML = function (project) {
   return `
   <div>
   <h3>${project.title}</h3>
-  <p>${project.desc}</p>
+  <p>${project.desc}</p><br>
+  <img class="project-picture" src="${project.picture}" alt="a screenshot of ${project.title}"><br>
   <ul class="tech">
     <h3>Uses:</h3>
     ${projTechs}

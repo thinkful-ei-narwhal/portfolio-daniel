@@ -3,7 +3,7 @@ const projects = [
     id: cuid(),
     title: 'Quiz App',
     desc: "An early project we completed in Thinkful's EI program, we had to create a quiz app from scratch using jQuery! We decided to have a quiz based on anime, and make it as fun as we could!",
-    picture: '',
+    picture: 'pictures/project_picture.png',
     tech: ['HTML5', 'CSS', 'Javascript', 'jQuery'],
     repo: 'https://github.com/thinkful-ei-narwhal/quiz-app-boilerplate-chadwick-daniel',
     live: 'https://thinkful-ei-narwhal.github.io/quiz-app-boilerplate-chadwick-daniel'

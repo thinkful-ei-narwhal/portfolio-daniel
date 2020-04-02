@@ -24,7 +24,7 @@ footer {
 }
 
 nav {
-  background-image: url('violin\ banner.png');
+  background-image: url('pictures/violin_banner.png');
   background-size: 100% 100%;
   background-color: transparent;
   display: flex;
@@ -127,6 +127,11 @@ p::before {
 p::after {
   font-style: italic;
   content: " }";
+}
+
+.bio-picture, .project-picture {
+  width: 60%;
+  border-radius: 100px;
 }
 
 .drop {
