@@ -4,17 +4,17 @@ import store from './store.js';
 
 const soundToggleOne = function (bool) {
   if (!bool) {
-    return '<button class="sound"><i class="fas fa-volume-mute"></i></button>';
+    return '<button class="sound" aria-label="Access Sound Toggle"><i class="fas fa-volume-mute"></i></button>';
   } else {
-    return '<button class="sound"><i class="fas fa-volume-up"></i></button>';
+    return '<button class="sound" aria-label="Access Sound Toggle"><i class="fas fa-volume-up"></i></button>';
   }
 };
 
 const floatingSoundTwo = function (bool) {
   if (!bool) {
-    return '<button class="float-sound"><i class="fas fa-volume-mute"></i></button>';
+    return '<button class="float-sound" aria-label="Access Sound Toggle"><i class="fas fa-volume-mute"></i></button>';
   } else {
-    return '<button class="float-sound"><i class="fas fa-volume-up"></i></button>';
+    return '<button class="float-sound" aria-label="Access Sound Toggle"><i class="fas fa-volume-up"></i></button>';
   }
 };
 
