@@ -250,6 +250,20 @@ select {
   margin: 5px;
 }
 
+.hidden-player {
+  display: none;
+}
+
+.port-contain {
+  padding: 25px;
+  border: 8px double white;
+  border-radius: 10px;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
 
 @media (min-width: 440px) { /* Medium Screen */
   .drop {
@@ -366,7 +380,4 @@ select {
   }
 }
 
-.hidden-player {
-  display: none;
-}
 
