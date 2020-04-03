@@ -34,7 +34,7 @@ const generateMenuHTML = function(bool) {
         <a href="#anchor2" class="button-piano white">Biography <i class="fas fa-book"></i></a>
       </li>
       <li>
-      <a class="piano-button black" href="https://github.com/DanielJSottile" target="_blank">Github <i class="fab fa-github-square"></i></a>
+      <a class="piano-button black" href="https://github.com/DanielJSottile" target="_blank">GitHub <i class="fab fa-github-square"></i></a>
       </li>
       <li>
         <a href="#anchor3" class="button-piano white">Portfolio <i class="fas fa-pager"></i></a>
@@ -91,7 +91,7 @@ const projectHTML = function (project) {
       elClass = '<i class="fab fa-html5"></i>';
     } if (el === 'CSS') {
       elClass = '<i class="fab fa-css3-alt"></i>';
-    } if (el === 'Javascript') {
+    } if (el === 'JavaScript') {
       elClass = '<i class="fab fa-js-square"></i>';
     } if (el === 'Node') {
       elClass = '<i class="fab fa-node-js"></i>';
@@ -165,6 +165,14 @@ const soundToggleClickOneListener = function() {
   $('nav').on('click', '.sound-toggle', function(event) {
     event.preventDefault();
     store.soundPlay = !store.soundPlay;
+    if (store.soundPlay) {
+      const player = $('main').find('#audio-player');
+      console.log(player);
+      player[0].play();
+    } else {
+      const player = $('main').find('#audio-player');
+      player[0].pause();
+    }
     render();
   });
 };
@@ -173,6 +181,14 @@ const soundToggleClickTwoListener = function() {
   $('main').on('click', '.floating-sound', function(event) {
     event.preventDefault();
     store.soundPlay = !store.soundPlay;
+    if (store.soundPlay) {
+      const player = $('main').find('#audio-player');
+      console.log(player);
+      player[0].play();
+    } else {
+      const player = $('main').find('#audio-player');
+      player[0].pause();
+    }
     render();
   });
 };
