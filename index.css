@@ -93,7 +93,7 @@ section:nth-child(even) {
   font-size: 20px;
 }
 
-a {
+a, .button-project {
   font-family: 'Alegreya', serif;
   color: rgb(0, 0, 0);
   background-color: white;
@@ -104,10 +104,9 @@ a {
   border: 1px solid white;
   border-radius: 4px;
   margin: 5px;
-  
 }
 
-a:hover, .sound:hover, .menu:hover, .float-sound:hover {
+a:hover, .sound:hover, .menu:hover, .float-sound:hover, .button-project:hover {
   color: rgb(240, 240, 240);
   background-color: #000092;
   border: 1px solid white;
@@ -143,6 +142,11 @@ p::after {
   border-radius: 30px;
 }
 
+#project-selector {
+  margin: auto;
+  width: 100px;
+}
+
 .drop {
   display: flex;
   flex-direction: column;
@@ -157,13 +161,14 @@ p::after {
 
 .tech {
   font-family: 'Trebuchet MS', sans-serif;
-  text-align: left;
+  text-align: center;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-around;
   list-style-type: none;
   width: 80%;
-  margin-left: 15%;
+  margin: auto;
 }
 
 .button-piano, .piano-button {
@@ -218,7 +223,7 @@ select {
 }
 
 .menu-button{
-  display: none;
+  display: inline-block;
   font-family: 'Alegreya', serif;
   background-color: white;
   border: 1px solid white;
@@ -255,13 +260,25 @@ select {
 }
 
 .port-contain {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   padding: 25px;
   border: 8px double white;
   border-radius: 10px;
-  width: 35%;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
+}
+
+.repo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
 }
 
 
@@ -274,6 +291,18 @@ select {
     width: 75px;
   }
 
+  .tech {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  li {
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
 }
 
 @media (min-width: 500px) { /* Medium Screen */
@@ -284,11 +313,38 @@ select {
   .button-piano {
     width: 85px;
   }
+
+  li {
+    width: 33%;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 700px) { /* Medium Screen */
   .drop {
     padding-left: 5%;
+  }
+
+  li {
+    width: 25%;
+    flex-wrap: wrap;
+  }
+
+  .repo-name {
+    margin: 0;
+  }
+
+  .repo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 75%;
+    margin: auto;
+  }
+
+  .repo-button {
+    height: 20px;
   }
 }
 
@@ -306,7 +362,12 @@ select {
   }
   
   .menu-button{
-    display: inline;
+    display: inline-block;
+  }
+
+  li {
+    width: 25%;
+    flex-wrap: wrap;
   }
 }
 
@@ -324,6 +385,11 @@ select {
   .float-sound {
     top: 17.5%;
     left: 10%;
+  }
+
+  li {
+    width: 20%;
+    flex-wrap: wrap;
   }
 }
 

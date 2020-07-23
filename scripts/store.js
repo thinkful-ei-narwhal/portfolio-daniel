@@ -2,7 +2,7 @@ const projects = [
   {
     id: cuid(),
     title: 'Quiz App',
-    desc: 'An early project we completed in Thinkful\'s EI program, we had to create a quiz app from scratch using jQuery! We decided to have a quiz based on anime, and make it as fun as we could!',
+    desc: 'An early project we completed in Thinkful\'s EI program, we had to create a quiz app from scratch using jQuery! We decided to have a quiz based on anime, and make it as fun as we could!  We built it for a Thinkful project, and decided on Anime because, like I said, it was fun!',
     picture: 'https://imgur.com/zZhoPU2.png',
     tech: ['HTML5', 'CSS', 'JavaScript', 'jQuery'],
     repo: 'https://github.com/thinkful-ei-narwhal/quiz-app-boilerplate-chadwick-daniel',
@@ -11,7 +11,7 @@ const projects = [
   {
     id: cuid(),
     title: 'Petful',
-    desc: 'A challenge project during Thinkful\'s E.I. program, this project was meant to recap our study of Data Structures and Algorithms, and this app specifically employed Queues in order to deal with adoptees and pets in the shelter.  It is geared toward people who wish to adopt pets, and toward adoption agencies who wish to adopt pets who enter their shelter first.  We even went the extra mile and incorporated them into our React App, which made State very tricky!',
+    desc: 'A challenge project during Thinkful\'s E.I. program, this project was meant to recap our study of Data Structures and Algorithms, and this app specifically employed Queues in order to deal with adoptees and pets in the shelter.  It is geared toward people who wish to adopt pets, and toward adoption agencies who wish to adopt pets who enter their shelter first.  We even went the extra mile and incorporated them into our React App, which made State very tricky!  We built it for a Thinkful project, and the content was decided for us.',
     picture: 'https://imgur.com/BDi7aMT.png',
     tech: ['HTML5', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express'],
     repo: 'https://github.com/thinkful-ei-narwhal/DSA-Petful-client-Cesar-Daniel',
@@ -29,7 +29,7 @@ const projects = [
   {
     id: cuid(),
     title: 'Spaced Repetition - Oratore',
-    desc: 'Thinkful E.I.\'s 2nd Capstone project, this full-stack application was built in 1 week with a partner based on a specific set of guidelines, including passing Cypress client-side testing.  This app is designed as a spaced-repeition language learning application geared towards those who wish to lean a new language.  While this project gave little room for flexibility, my partner and I attempted as much as we could to make it as unique as possible.',
+    desc: 'Thinkful E.I.\'s 2nd Capstone project, this full-stack application was built in 1 week with a partner based on a specific set of guidelines, including passing Cypress client-side testing.  This app is designed as a spaced-repeition language learning application geared towards those who wish to lean a new language.  While this project gave little room for flexibility, my partner and I attempted as much as we could to make it as unique as possible.  This was built for a project for Thinkful, and the content of it was decided for us.',
     picture: 'https://imgur.com/Ou2b4X5.png',
     tech: ['HTML5', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express', 'Jest', 'Enzyme', 'Mocha', 'Chai', 'Superteset', 'XSS', 'Winston', 'NYC', 'PostgresQL', 'Knex', 'Cypress'],
     repo: 'https://github.com/thinkful-ei-narwhal/Spaced-Repetition-client-Joseph-Daniel',

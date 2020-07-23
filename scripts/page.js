@@ -112,14 +112,16 @@ const projectHTML = function (project) {
   <h3>${project.title}</h3>
   <p>${project.desc}</p><br>
   <img class="project-picture" src="${project.picture}" alt="a screenshot of ${project.title}"><br>
+  <h3>Uses:</h3>
   <ul class="tech">
-    <h3>Uses:</h3>
     ${projTechs}
   </ul>
-  <h3>Repo:</h3>
-  <a href="${project.repo}" target="_blank">${project.title} Repo <i class="fab fa-github-square"></i></a>
-  <h3>Live Page:</h3>
-  <a href="${project.live}" target="_blank">${project.title} Live Page <i class="fas fa-globe-americas"></i></a>
+  <div class="repo">
+    <h3 class="repo-name">Repo:</h3>
+    <a class="repo-button" href="${project.repo}" target="_blank">${project.title} Repo <i class="fab fa-github-square"></i></a>
+    <h3 class="repo-name">Live Page:</h3>
+    <a class="repo-button" href="${project.live}" target="_blank">${project.title} Live Page <i class="fas fa-globe-americas"></i></a>
+  </div>
   </div>
   `;
 };
@@ -144,8 +146,8 @@ const render = function () {
 // listener events
 
 const projectSubmitListener = function() {
-  $('main').on('change', '#project-selector', function () {
-    let projectVal = $('option:selected').val();
+  $('main').on('click', 'button.button-project', function(event) {
+    let projectVal = $(this).attr('id');
     projectVal = Number(projectVal);
     store.currPro = projectVal;
     render();
