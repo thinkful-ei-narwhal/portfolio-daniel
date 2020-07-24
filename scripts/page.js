@@ -117,10 +117,14 @@ const projectHTML = function (project) {
     ${projTechs}
   </ul>
   <div class="repo">
-    <h3 class="repo-name">Repo:</h3>
-    <a class="repo-button" href="${project.repo}" target="_blank">${project.title} Repo <i class="fab fa-github-square"></i></a>
-    <h3 class="repo-name">Live Page:</h3>
-    <a class="repo-button" href="${project.live}" target="_blank">${project.title} Live Page <i class="fas fa-globe-americas"></i></a>
+    <div class="repo-div">
+      <h3 class="repo-name">Repo:</h3>
+      <a class="repo-button" href="${project.repo}" target="_blank">${project.title} Repo <i class="fab fa-github-square"></i></a>
+    </div>
+    <div class="repo-div">
+      <h3 class="repo-name">Live Page:</h3>
+      <a class="repo-button" href="${project.live}" target="_blank">${project.title} Live Page <i class="fas fa-globe-americas"></i></a>
+    </div>
   </div>
   </div>
   `;

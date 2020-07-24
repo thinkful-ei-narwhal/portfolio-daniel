@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=BioRhyme&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -165,10 +167,11 @@ p::after {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style-type: none;
   width: 80%;
   margin: auto;
+  padding: 0px;
 }
 
 .button-piano, .piano-button {
@@ -253,6 +256,7 @@ select {
   border: 1px solid white;
   border-radius: 5px;
   margin: 5px;
+  width: 35px;
 }
 
 .hidden-player {
@@ -281,6 +285,10 @@ select {
   padding-top: 60px;
 }
 
+.repo-div {
+  width: 50;
+}
+
 
 @media (min-width: 440px) { /* Medium Screen */
   .drop {
@@ -295,7 +303,7 @@ select {
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   li {
@@ -345,6 +353,12 @@ select {
 
   .repo-button {
     height: 20px;
+  }
+
+  .repo-div {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
   }
 }
 
